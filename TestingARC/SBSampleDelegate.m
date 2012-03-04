@@ -3,7 +3,7 @@
 //  TestingARC
 //
 //  Created by Takuya Otani on 20/02/12.
-//  Copyright (c) 2012 SerendipityNZ Ltd. All rights reserved.
+//  Copyright (c) 2012 SerendipityNZ Ltd.
 //
 
 #import "SBSampleDelegate.h"
