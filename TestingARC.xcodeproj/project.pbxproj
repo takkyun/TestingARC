@@ -13,6 +13,7 @@
 		43690BDA14F1DB2C000BB36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43690BD814F1DB2C000BB36D /* InfoPlist.strings */; };
 		43690BDC14F1DB2C000BB36D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43690BDB14F1DB2C000BB36D /* main.m */; };
 		43690BE014F1DB2C000BB36D /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43690BDF14F1DB2C000BB36D /* SBAppDelegate.m */; };
+		43690BE814F1DBC1000BB36D /* SBSampleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43690BE714F1DBC1000BB36D /* SBSampleDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		43690BCF14F1DB2C000BB36D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43690BD114F1DB2C000BB36D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43690BD314F1DB2C000BB36D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		43690BD714F1DB2C000BB36D /* TestingARC-Info.plist */ = {isa = PBXFileReference; path = "TestingARC-Info.plist"; sourceTree = "<group>"; };
+		43690BD714F1DB2C000BB36D /* TestingARC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingARC-Info.plist"; sourceTree = "<group>"; };
 		43690BD914F1DB2C000BB36D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43690BDB14F1DB2C000BB36D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		43690BDD14F1DB2C000BB36D /* TestingARC-Prefix.pch */ = {isa = PBXFileReference; path = "TestingARC-Prefix.pch"; sourceTree = "<group>"; };
-		43690BDE14F1DB2C000BB36D /* SBAppDelegate.h */ = {isa = PBXFileReference; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		43690BDD14F1DB2C000BB36D /* TestingARC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingARC-Prefix.pch"; sourceTree = "<group>"; };
+		43690BDE14F1DB2C000BB36D /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
 		43690BDF14F1DB2C000BB36D /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		43690BE614F1DBC1000BB36D /* SBSampleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSampleDelegate.h; sourceTree = "<group>"; };
+		43690BE714F1DBC1000BB36D /* SBSampleDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSampleDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				43690BDE14F1DB2C000BB36D /* SBAppDelegate.h */,
 				43690BDF14F1DB2C000BB36D /* SBAppDelegate.m */,
+				43690BE614F1DBC1000BB36D /* SBSampleDelegate.h */,
+				43690BE714F1DBC1000BB36D /* SBSampleDelegate.m */,
 				43690BD614F1DB2C000BB36D /* Supporting Files */,
 			);
 			path = TestingARC;
@@ -155,6 +160,7 @@
 			files = (
 				43690BDC14F1DB2C000BB36D /* main.m in Sources */,
 				43690BE014F1DB2C000BB36D /* SBAppDelegate.m in Sources */,
+				43690BE814F1DBC1000BB36D /* SBSampleDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +229,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestingARC/TestingARC-Prefix.pch";
 				INFOPLIST_FILE = "TestingARC/TestingARC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -234,6 +241,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestingARC/TestingARC-Prefix.pch";
 				INFOPLIST_FILE = "TestingARC/TestingARC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
